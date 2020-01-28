@@ -1,117 +1,223 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
   <reporter-output>
   </reporter-output>
-  <suite name="Sanity Tests Suite" duration-ms="83226" started-at="2020-01-28T19:22:18 CET" finished-at="2020-01-28T19:23:41 CET">
+  <suite name="Default suite" duration-ms="111297" started-at="2020-01-28T20:18:09 CET" finished-at="2020-01-28T20:20:00 CET">
     <groups>
-      <group name="SanityUrgent">
-        <method signature="EBayAdvancedSearch_Sanity.advancedSearchKeywordsTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="advancedSearchKeywordsTest" class="com.qaworld.EBayAdvancedSearch_Sanity"/>
-        <method signature="EBayAdvancedSearch_Sanity.categoryOptionsInAscendingOrderTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="categoryOptionsInAscendingOrderTest" class="com.qaworld.EBayAdvancedSearch_Sanity"/>
-        <method signature="EBayAdvancedSearch_Sanity.ebayLinkLogoNavigatesToHomepageTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="ebayLinkLogoNavigatesToHomepageTest" class="com.qaworld.EBayAdvancedSearch_Sanity"/>
-        <method signature="EBayAdvancedSearch_Sanity.emptyAdvancedSearchTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="emptyAdvancedSearchTest" class="com.qaworld.EBayAdvancedSearch_Sanity"/>
-        <method signature="EBayHomePage_Sanity.emptySearchTest()[pri:0, instance:com.qaworld.EBayHomePage_Sanity@6c49835d]" name="emptySearchTest" class="com.qaworld.EBayHomePage_Sanity"/>
-      </group> <!-- SanityUrgent -->
     </groups>
-    <test name="Release 2019.5 Sanity test" duration-ms="83226" started-at="2020-01-28T19:22:18 CET" finished-at="2020-01-28T19:23:41 CET">
-      <class name="com.qaworld.EBayAdvancedSearch_Sanity">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="setUp" is-config="true" duration-ms="13434" started-at="2020-01-28T19:22:18 CET" finished-at="2020-01-28T19:22:31 CET">
+    <test name="Default test" duration-ms="111297" started-at="2020-01-28T20:18:09 CET" finished-at="2020-01-28T20:20:00 CET">
+      <class name="com.qaworld.Navigator">
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaworld.Navigator@5e853265]" name="test1" duration-ms="15712" started-at="2020-01-28T20:18:10 CET" data-provider="dataProvider1" finished-at="2020-01-28T20:18:26 CET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Robbie]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Robbie@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password1]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="advancedSearchKeywordsTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="advancedSearchKeywordsTest" duration-ms="10728" started-at="2020-01-28T19:22:31 CET" finished-at="2020-01-28T19:22:42 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- advancedSearchKeywordsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="tearDown" is-config="true" duration-ms="1719" started-at="2020-01-28T19:22:42 CET" finished-at="2020-01-28T19:22:44 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="setUp" is-config="true" duration-ms="10197" started-at="2020-01-28T19:22:44 CET" finished-at="2020-01-28T19:22:54 CET">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaworld.Navigator@5e853265]" name="test1" duration-ms="10247" started-at="2020-01-28T20:18:26 CET" data-provider="dataProvider1" finished-at="2020-01-28T20:18:36 CET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Dan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Dan@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="categoryOptionsInAscendingOrderTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="categoryOptionsInAscendingOrderTest" duration-ms="5186" started-at="2020-01-28T19:22:54 CET" finished-at="2020-01-28T19:22:59 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- categoryOptionsInAscendingOrderTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="tearDown" is-config="true" duration-ms="1034" started-at="2020-01-28T19:22:59 CET" finished-at="2020-01-28T19:23:00 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="setUp" is-config="true" duration-ms="9907" started-at="2020-01-28T19:23:00 CET" finished-at="2020-01-28T19:23:10 CET">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaworld.Navigator@5e853265]" name="test1" duration-ms="10395" started-at="2020-01-28T20:18:36 CET" data-provider="dataProvider1" finished-at="2020-01-28T20:18:46 CET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Angela]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Angela@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password3]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="ebayLinkLogoNavigatesToHomepageTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="ebayLinkLogoNavigatesToHomepageTest" duration-ms="7589" started-at="2020-01-28T19:23:10 CET" finished-at="2020-01-28T19:23:18 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ebayLinkLogoNavigatesToHomepageTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="tearDown" is-config="true" duration-ms="888" started-at="2020-01-28T19:23:18 CET" finished-at="2020-01-28T19:23:19 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="setUp" is-config="true" duration-ms="10102" started-at="2020-01-28T19:23:19 CET" finished-at="2020-01-28T19:23:29 CET">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaworld.Navigator@5e853265]" name="test1" duration-ms="10502" started-at="2020-01-28T20:18:46 CET" data-provider="dataProvider1" finished-at="2020-01-28T20:18:57 CET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[JosephJoe]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[JosephJoe@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="emptyAdvancedSearchTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="emptyAdvancedSearchTest" duration-ms="11453" started-at="2020-01-28T19:23:29 CET" finished-at="2020-01-28T19:23:40 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- emptyAdvancedSearchTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="tearDown" is-config="true" duration-ms="877" started-at="2020-01-28T19:23:40 CET" finished-at="2020-01-28T19:23:41 CET">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qaworld.EBayAdvancedSearch_Sanity -->
-      <class name="com.qaworld.EBayHomePage_Sanity">
-        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qaworld.EBayHomePage_Sanity@6c49835d]" name="setUp" is-config="true" duration-ms="14238" started-at="2020-01-28T19:22:18 CET" finished-at="2020-01-28T19:22:32 CET">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaworld.Navigator@5e853265]" name="test1" duration-ms="10721" started-at="2020-01-28T20:18:57 CET" data-provider="dataProvider1" finished-at="2020-01-28T20:19:08 CET">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Chrome]]>
+                <![CDATA[Shakira]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shakira@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password5]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="emptySearchTest()[pri:0, instance:com.qaworld.EBayHomePage_Sanity@6c49835d]" name="emptySearchTest" duration-ms="16310" started-at="2020-01-28T19:22:32 CET" finished-at="2020-01-28T19:22:48 CET">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaworld.Navigator@5e853265]" name="test1" duration-ms="11073" started-at="2020-01-28T20:19:08 CET" data-provider="dataProvider1" finished-at="2020-01-28T20:19:19 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Michael]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Michael@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password6]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- emptySearchTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayHomePage_Sanity@6c49835d]" name="tearDown" is-config="true" duration-ms="1401" started-at="2020-01-28T19:22:48 CET" finished-at="2020-01-28T19:22:50 CET">
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaworld.Navigator@5e853265]" name="test1" duration-ms="10404" started-at="2020-01-28T20:19:19 CET" data-provider="dataProvider1" finished-at="2020-01-28T20:19:29 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[John@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password7]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.qaworld.EBayHomePage_Sanity -->
-    </test> <!-- Release 2019.5 Sanity test -->
-  </suite> <!-- Sanity Tests Suite -->
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaworld.Navigator@5e853265]" name="test1" duration-ms="10410" started-at="2020-01-28T20:19:29 CET" data-provider="dataProvider1" finished-at="2020-01-28T20:19:39 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Anthony]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Anthony@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaworld.Navigator@5e853265]" name="test1" duration-ms="10310" started-at="2020-01-28T20:19:39 CET" data-provider="dataProvider1" finished-at="2020-01-28T20:19:50 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Horazzio]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Horazzio@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test1(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaworld.Navigator@5e853265]" name="test1" duration-ms="10102" started-at="2020-01-28T20:19:50 CET" data-provider="dataProvider1" finished-at="2020-01-28T20:20:00 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Gianna]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Gianna@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[password10]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+      </class> <!-- com.qaworld.Navigator -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
