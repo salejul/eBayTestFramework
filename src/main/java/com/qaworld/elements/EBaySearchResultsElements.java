@@ -1,0 +1,18 @@
+package com.qaworld.elements;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class EBaySearchResultsElements {
+	
+	WebDriver driver;
+
+	@FindBy(xpath="//div[@id='CenterPanel']/descendant::h3[2]") public WebElement firstSearchResult;
+	
+	public EBaySearchResultsElements(WebDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+	}
+}

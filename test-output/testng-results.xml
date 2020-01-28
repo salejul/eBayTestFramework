@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="42641" started-at="2020-01-28T16:38:37 CET" finished-at="2020-01-28T16:39:20 CET">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="42641" started-at="2020-01-28T16:38:37 CET" finished-at="2020-01-28T16:39:20 CET">
+      <class name="com.qaworld.EBayAdvancedSearch_Sanity">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="setUp" is-config="true" duration-ms="12180" started-at="2020-01-28T16:38:37 CET" finished-at="2020-01-28T16:38:49 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="advancedSearchKeywordsTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="advancedSearchKeywordsTest" duration-ms="8608" started-at="2020-01-28T16:38:49 CET" finished-at="2020-01-28T16:38:58 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- advancedSearchKeywordsTest -->
+        <test-method status="PASS" signature="categoryOptionsInAscendingOrderTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="categoryOptionsInAscendingOrderTest" duration-ms="4512" started-at="2020-01-28T16:38:58 CET" finished-at="2020-01-28T16:39:02 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- categoryOptionsInAscendingOrderTest -->
+        <test-method status="PASS" signature="ebayLinkLogoNavigatesToHomepageTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="ebayLinkLogoNavigatesToHomepageTest" duration-ms="5228" started-at="2020-01-28T16:39:02 CET" finished-at="2020-01-28T16:39:08 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ebayLinkLogoNavigatesToHomepageTest -->
+        <test-method status="PASS" signature="emptyAdvancedSearchTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="emptyAdvancedSearchTest" duration-ms="11102" started-at="2020-01-28T16:39:08 CET" finished-at="2020-01-28T16:39:19 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyAdvancedSearchTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="tearDown" is-config="true" duration-ms="889" started-at="2020-01-28T16:39:19 CET" finished-at="2020-01-28T16:39:20 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qaworld.EBayAdvancedSearch_Sanity -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
