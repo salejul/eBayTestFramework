@@ -1,37 +1,117 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="42641" started-at="2020-01-28T16:38:37 CET" finished-at="2020-01-28T16:39:20 CET">
+  <suite name="Sanity Tests Suite" duration-ms="83226" started-at="2020-01-28T19:22:18 CET" finished-at="2020-01-28T19:23:41 CET">
     <groups>
+      <group name="SanityUrgent">
+        <method signature="EBayAdvancedSearch_Sanity.advancedSearchKeywordsTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="advancedSearchKeywordsTest" class="com.qaworld.EBayAdvancedSearch_Sanity"/>
+        <method signature="EBayAdvancedSearch_Sanity.categoryOptionsInAscendingOrderTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="categoryOptionsInAscendingOrderTest" class="com.qaworld.EBayAdvancedSearch_Sanity"/>
+        <method signature="EBayAdvancedSearch_Sanity.ebayLinkLogoNavigatesToHomepageTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="ebayLinkLogoNavigatesToHomepageTest" class="com.qaworld.EBayAdvancedSearch_Sanity"/>
+        <method signature="EBayAdvancedSearch_Sanity.emptyAdvancedSearchTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="emptyAdvancedSearchTest" class="com.qaworld.EBayAdvancedSearch_Sanity"/>
+        <method signature="EBayHomePage_Sanity.emptySearchTest()[pri:0, instance:com.qaworld.EBayHomePage_Sanity@6c49835d]" name="emptySearchTest" class="com.qaworld.EBayHomePage_Sanity"/>
+      </group> <!-- SanityUrgent -->
     </groups>
-    <test name="Default test" duration-ms="42641" started-at="2020-01-28T16:38:37 CET" finished-at="2020-01-28T16:39:20 CET">
+    <test name="Release 2019.5 Sanity test" duration-ms="83226" started-at="2020-01-28T19:22:18 CET" finished-at="2020-01-28T19:23:41 CET">
       <class name="com.qaworld.EBayAdvancedSearch_Sanity">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="setUp" is-config="true" duration-ms="12180" started-at="2020-01-28T16:38:37 CET" finished-at="2020-01-28T16:38:49 CET">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="setUp" is-config="true" duration-ms="13434" started-at="2020-01-28T19:22:18 CET" finished-at="2020-01-28T19:22:31 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="advancedSearchKeywordsTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="advancedSearchKeywordsTest" duration-ms="8608" started-at="2020-01-28T16:38:49 CET" finished-at="2020-01-28T16:38:58 CET">
+        <test-method status="PASS" signature="advancedSearchKeywordsTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="advancedSearchKeywordsTest" duration-ms="10728" started-at="2020-01-28T19:22:31 CET" finished-at="2020-01-28T19:22:42 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- advancedSearchKeywordsTest -->
-        <test-method status="PASS" signature="categoryOptionsInAscendingOrderTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="categoryOptionsInAscendingOrderTest" duration-ms="4512" started-at="2020-01-28T16:38:58 CET" finished-at="2020-01-28T16:39:02 CET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="tearDown" is-config="true" duration-ms="1719" started-at="2020-01-28T19:22:42 CET" finished-at="2020-01-28T19:22:44 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="setUp" is-config="true" duration-ms="10197" started-at="2020-01-28T19:22:44 CET" finished-at="2020-01-28T19:22:54 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="categoryOptionsInAscendingOrderTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="categoryOptionsInAscendingOrderTest" duration-ms="5186" started-at="2020-01-28T19:22:54 CET" finished-at="2020-01-28T19:22:59 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- categoryOptionsInAscendingOrderTest -->
-        <test-method status="PASS" signature="ebayLinkLogoNavigatesToHomepageTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="ebayLinkLogoNavigatesToHomepageTest" duration-ms="5228" started-at="2020-01-28T16:39:02 CET" finished-at="2020-01-28T16:39:08 CET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="tearDown" is-config="true" duration-ms="1034" started-at="2020-01-28T19:22:59 CET" finished-at="2020-01-28T19:23:00 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="setUp" is-config="true" duration-ms="9907" started-at="2020-01-28T19:23:00 CET" finished-at="2020-01-28T19:23:10 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="ebayLinkLogoNavigatesToHomepageTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="ebayLinkLogoNavigatesToHomepageTest" duration-ms="7589" started-at="2020-01-28T19:23:10 CET" finished-at="2020-01-28T19:23:18 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ebayLinkLogoNavigatesToHomepageTest -->
-        <test-method status="PASS" signature="emptyAdvancedSearchTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="emptyAdvancedSearchTest" duration-ms="11102" started-at="2020-01-28T16:39:08 CET" finished-at="2020-01-28T16:39:19 CET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="tearDown" is-config="true" duration-ms="888" started-at="2020-01-28T19:23:18 CET" finished-at="2020-01-28T19:23:19 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="setUp" is-config="true" duration-ms="10102" started-at="2020-01-28T19:23:19 CET" finished-at="2020-01-28T19:23:29 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="emptyAdvancedSearchTest()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="emptyAdvancedSearchTest" duration-ms="11453" started-at="2020-01-28T19:23:29 CET" finished-at="2020-01-28T19:23:40 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- emptyAdvancedSearchTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@57855c9a]" name="tearDown" is-config="true" duration-ms="889" started-at="2020-01-28T16:39:19 CET" finished-at="2020-01-28T16:39:20 CET">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayAdvancedSearch_Sanity@5e853265]" name="tearDown" is-config="true" duration-ms="877" started-at="2020-01-28T19:23:40 CET" finished-at="2020-01-28T19:23:41 CET">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qaworld.EBayAdvancedSearch_Sanity -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.qaworld.EBayHomePage_Sanity">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:com.qaworld.EBayHomePage_Sanity@6c49835d]" name="setUp" is-config="true" duration-ms="14238" started-at="2020-01-28T19:22:18 CET" finished-at="2020-01-28T19:22:32 CET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="emptySearchTest()[pri:0, instance:com.qaworld.EBayHomePage_Sanity@6c49835d]" name="emptySearchTest" duration-ms="16310" started-at="2020-01-28T19:22:32 CET" finished-at="2020-01-28T19:22:48 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptySearchTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qaworld.EBayHomePage_Sanity@6c49835d]" name="tearDown" is-config="true" duration-ms="1401" started-at="2020-01-28T19:22:48 CET" finished-at="2020-01-28T19:22:50 CET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qaworld.EBayHomePage_Sanity -->
+    </test> <!-- Release 2019.5 Sanity test -->
+  </suite> <!-- Sanity Tests Suite -->
 </testng-results>

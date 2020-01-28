@@ -1,11 +1,20 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 
+<!-- parallel="classes" thread-count="2" -->
+
 <suite name="Sanity Tests Suite">
 	<test name="Release 2019.5 Sanity test">
+		<parameter name="browser" value="Chrome" />
+		<groups>
+			<run>
+				<include name="SanityUrgent" />
+			</run>
+		</groups>
 		<classes>
-			<class name="com.qaworld.EBayHomePage_Sanity"/>
-			<!-- <method name="blablabla"></method> include or exclude method name, you also must close class tag -->
-			<class name="com.qaworld.EBayAdvancedSearch_Sanity"/>
+			<class name="com.qaworld.EBayHomePage_Sanity" />
+			<!-- <method name="blablabla"></method> include or exclude method name, 
+				you also must close class tag -->
+			<class name="com.qaworld.EBayAdvancedSearch_Sanity" />
 		</classes>
 	</test>
 </suite>

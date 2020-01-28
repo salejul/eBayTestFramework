@@ -2,35 +2,47 @@ package com.qaworld;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
-import com.qaworld.pages.EBayAdvancedSearchPage;
-import com.qaworld.pages.EBayHomePage;
-import com.qaworld.pages.EBaySearchResultsPage;
+import com.qaworld.lib.AppLib;
 
 public class AbstractBaseTest {
 	
 	WebDriver driver;
+	private AppLib app;
 	
-	EBayAdvancedSearchPage advSearchPage;
-	EBaySearchResultsPage searchResultPage;
-	EBayHomePage homePage;
-
-	@BeforeTest
-	public void setUp() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		advSearchPage = new EBayAdvancedSearchPage(driver);
-		searchResultPage = new EBaySearchResultsPage(driver);
-		homePage = new EBayHomePage(driver);
+	@Parameters("browser")
+	@BeforeMethod(alwaysRun = true)
+	public void setUp(@Optional("Chrome") String browser) throws Exception {
+		switch (browser) {
+		case "Chrome":
+			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+			driver = new ChromeDriver();
+			break;
+		case "Firefox":
+			System.setProperty("webdriver.gecko.driver", "src/main/resources/geckodriver.exe");
+			driver = new FirefoxDriver();
+			break;
+		default:
+			System.out.println("Provide valid driver name!");
+			break;
+		}
 		
+		driver.manage().window().maximize();
+		app = new AppLib(driver);
 	}
 
-	@AfterTest
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() {
 		driver.quit();
+	}
+
+	public AppLib app() {
+		return app;
 	}
 	
 	

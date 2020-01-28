@@ -13,38 +13,37 @@ import org.testng.asserts.SoftAssert;
 
 public class EBayAdvancedSearch_Sanity extends AbstractBaseTest {
 
-	@Test
+	@Test(groups = "SanityUrgent")
 	public void emptyAdvancedSearchTest() throws Exception {
 		
-		driver.get("https://www.ebay.com/sch/ebayadvsearch");
+		app().flow().navigateToUrl("https://www.ebay.com/sch/ebayadvsearch");
 		Thread.sleep(2000);
 		
 		String expectedUrl = "https://www.ebay.com/n/all-categories";
 		String expectedTitle = "Shop by Category | eBay";
 
 		
-		Assert.assertTrue(advSearchPage.isSearchButtonEnabled(), "Verify that Search button is enabled.");
+		Assert.assertTrue(app().pages().advancedSearchPage().isSearchButtonEnabled(), "Verify that Search button is enabled.");
 
-		advSearchPage.clickOnAdvancedSearchButton();
+		app().pages().advancedSearchPage().clickOnAdvancedSearchButton();
 		Thread.sleep(3000);
 
-		String newUrl = driver.getCurrentUrl();
-		String newTitle = driver.getTitle();
-
+		String newUrl = app().flow().getCurrentURL();
+		String newTitle = app().flow().getCurrentTitle();
 		Assert.assertEquals(expectedUrl, newUrl, "Verify URL of the new page.");
 		Assert.assertEquals(expectedTitle, newTitle, "Verify TITLE of the new page!");
 
 	}
 
-	@Test
+	@Test(groups = "SanityUrgent")
 	public void categoryOptionsInAscendingOrderTest() throws Exception {
 
-		driver.get("https://www.ebay.com/sch/ebayadvsearch");
+		app().flow().navigateToUrl("https://www.ebay.com/sch/ebayadvsearch");
 		Thread.sleep(2000);
 		
 		SoftAssert softA = new SoftAssert();
 
-		Select dropdown = new Select(advSearchPage.selectDropDownMenu());
+		Select dropdown = new Select(app().pages().advancedSearchPage().selectDropDownMenu());
 		List<WebElement> dropdown2 = dropdown.getOptions();
 
 		List<String> arr1 = new ArrayList<String>();
@@ -65,38 +64,38 @@ public class EBayAdvancedSearch_Sanity extends AbstractBaseTest {
 
 	}
 
-	@Test
+	@Test(groups = "SanityUrgent")
 	public void ebayLinkLogoNavigatesToHomepageTest() throws Exception {
 		
-		driver.get("https://www.ebay.com/sch/ebayadvsearch");
+		app().flow().navigateToUrl("https://www.ebay.com/sch/ebayadvsearch");
 		Thread.sleep(2000);
 
 		String expectedUrl = "https://www.ebay.com/";
 		String expectedTitle = "Electronics, Cars, Fashion, Collectibles & More | eBay";
 
-		advSearchPage.clickOneBayLogo();
+		app().pages().advancedSearchPage().clickOneBayLogo();
 
-		String newUrl = driver.getCurrentUrl();
-		String newTitle = driver.getTitle();
+		String newUrl = app().flow().getCurrentURL();
+		String newTitle = app().flow().getCurrentTitle();
 
 		Assert.assertEquals(expectedUrl, newUrl, "Verify URL of the new page");
 		Assert.assertEquals(expectedTitle, newTitle, "Verify title of the new page");
 	}
 
-	@Test
+	@Test(groups = "SanityUrgent")
 	public void advancedSearchKeywordsTest() throws Exception {
 		
-		driver.get("https://www.ebay.com/sch/ebayadvsearch");
+		app().flow().navigateToUrl("https://www.ebay.com/sch/ebayadvsearch");
 		Thread.sleep(2000);
 		
 		String keyword1 = "gray";
 		String keyword2 = "suitcase";
 		String searchString = keyword1 + " " + keyword2;
 
-		advSearchPage.enterSearcStringInKeywordsField(searchString);
-		advSearchPage.clickOnAdvancedSearchButton();
+		app().pages().advancedSearchPage().enterSearcStringInKeywordsField(searchString);
+		app().pages().advancedSearchPage().clickOnAdvancedSearchButton();
 
-		String firstResultTitle = searchResultPage.getTextOfFirstResult();
+		String firstResultTitle = app().pages().searchResultPage().getTextOfFirstResult();
 
 //		WebElement secondResult = driver.findElement(By.xpath("//div[@id='Results']/descendant::h3[2]"));
 //		String secondResultTitle = secondResult.getText().trim();

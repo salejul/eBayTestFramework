@@ -21,22 +21,22 @@ public class EBayHomePage_Sanity extends AbstractBaseTest {
 	}
 	
 	
-	@Test
+	@Test(groups = "SanityUrgent")
 	public void emptySearchTest() throws Exception {
 
 
-		driver.get("https://www.ebay.com");
+		app().flow().navigateToUrl("https://www.ebay.com");
 		
 		SoftAssert softAs = new SoftAssert();
 		
 		//These are soft asserts over hard assertions
 		
-		softAs.assertTrue(homePage.isSearchButtonEnabled(), "Verify that search button is enabled.");
-		homePage.clickOnSearchButton();
+		softAs.assertTrue(app().pages().homePage().isSearchButtonEnabled(), "Verify that search button is enabled.");
+		app().pages().homePage().clickOnSearchButton();
 		String expectedURL = "https://www.ebay.com/n/all-categories";
 		String expectedTitle = "Shop by Category | eBay";
-		String actualURL = driver.getCurrentUrl();
-		String actualTitle = driver.getTitle();
+		String actualURL = app().flow().getCurrentURL();
+		String actualTitle = app().flow().getCurrentTitle();
 
 		softAs.assertEquals(expectedURL, actualURL, "Verify that actual url maches expected!");
 		
