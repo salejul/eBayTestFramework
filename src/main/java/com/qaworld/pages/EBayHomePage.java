@@ -7,6 +7,8 @@ import com.qaworld.elements.EBayHomePageElements;
 public class EBayHomePage {
 	
 	WebDriver driver;
+	private String pageUrl = "https://www.ebay.com";
+	
 	EBayHomePageElements homePageElements;
 	
 	//creating constructor for web elements of EBayHomePage
@@ -26,6 +28,10 @@ public class EBayHomePage {
 	
 	public boolean isSearchButtonEnabled() {
 		return homePageElements.searchBtn.isEnabled();
+	}
+
+	public String getPageUrl() {
+		return this.pageUrl;
 	}
 
 }

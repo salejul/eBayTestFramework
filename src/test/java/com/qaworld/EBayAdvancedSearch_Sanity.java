@@ -16,8 +16,7 @@ public class EBayAdvancedSearch_Sanity extends AbstractBaseTest {
 	@Test(groups = "SanityUrgent")
 	public void emptyAdvancedSearchTest() throws Exception {
 		
-		app().flow().navigateToUrl("https://www.ebay.com/sch/ebayadvsearch");
-		Thread.sleep(2000);
+		app().flow().navigateToUrl(app().pages().advancedSearchPage().getPageUrl());
 		
 		String expectedUrl = "https://www.ebay.com/n/all-categories";
 		String expectedTitle = "Shop by Category | eBay";
@@ -38,8 +37,7 @@ public class EBayAdvancedSearch_Sanity extends AbstractBaseTest {
 	@Test(groups = "SanityUrgent")
 	public void categoryOptionsInAscendingOrderTest() throws Exception {
 
-		app().flow().navigateToUrl("https://www.ebay.com/sch/ebayadvsearch");
-		Thread.sleep(2000);
+		app().flow().navigateToUrl(app().pages().advancedSearchPage().getPageUrl());
 		
 		SoftAssert softA = new SoftAssert();
 
@@ -67,8 +65,7 @@ public class EBayAdvancedSearch_Sanity extends AbstractBaseTest {
 	@Test(groups = "SanityUrgent")
 	public void ebayLinkLogoNavigatesToHomepageTest() throws Exception {
 		
-		app().flow().navigateToUrl("https://www.ebay.com/sch/ebayadvsearch");
-		Thread.sleep(2000);
+		app().flow().navigateToUrl(app().pages().advancedSearchPage().getPageUrl());
 
 		String expectedUrl = "https://www.ebay.com/";
 		String expectedTitle = "Electronics, Cars, Fashion, Collectibles & More | eBay";
@@ -85,8 +82,7 @@ public class EBayAdvancedSearch_Sanity extends AbstractBaseTest {
 	@Test(groups = "SanityUrgent")
 	public void advancedSearchKeywordsTest() throws Exception {
 		
-		app().flow().navigateToUrl("https://www.ebay.com/sch/ebayadvsearch");
-		Thread.sleep(2000);
+		app().flow().navigateToUrl(app().pages().advancedSearchPage().getPageUrl());
 		
 		String keyword1 = "gray";
 		String keyword2 = "suitcase";

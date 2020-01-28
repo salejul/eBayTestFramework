@@ -9,6 +9,9 @@ import com.qaworld.elements.EBaySearchResultsElements;
 public class EBayAdvancedSearchPage {
 	
 	WebDriver driver;
+	
+	private String pageUrl = "https://www.ebay.com/sch/ebayadvsearch";
+	
 	EBayAdvancedSearchElements advSearchElements;
 	EBaySearchResultsElements searchResultElements;
 	
@@ -49,6 +52,12 @@ public class EBayAdvancedSearchPage {
 	//click on advanced search button
 	public void clickOnAdvancedSearchButton() {
 		advSearchElements.advancedSearchBtn.click();
+	}
+	
+	//action
+	//get page url
+	public String getPageUrl() {
+		return this.pageUrl;
 	}
 	
 	

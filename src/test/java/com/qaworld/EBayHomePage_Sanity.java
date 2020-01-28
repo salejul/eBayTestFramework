@@ -25,7 +25,7 @@ public class EBayHomePage_Sanity extends AbstractBaseTest {
 	public void emptySearchTest() throws Exception {
 
 
-		app().flow().navigateToUrl("https://www.ebay.com");
+		app().flow().navigateToUrl(app().pages().homePage().getPageUrl());
 		
 		SoftAssert softAs = new SoftAssert();
 		
@@ -42,7 +42,6 @@ public class EBayHomePage_Sanity extends AbstractBaseTest {
 		
 		softAs.assertTrue(expectedTitle.contains(actualTitle), "Verify that actual title maches expected!");
 
-		Thread.sleep(2000);
 		
 		softAs.assertAll();
 	}

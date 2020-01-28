@@ -1,5 +1,7 @@
 package com.qaworld;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -32,6 +34,7 @@ public class AbstractBaseTest {
 			break;
 		}
 		
+		driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		app = new AppLib(driver);
 	}
